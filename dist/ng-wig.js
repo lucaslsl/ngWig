@@ -236,8 +236,7 @@ angular.module('ngWig')
                     {name: 'Título 1', value: 'h1'},
                     {name: 'Título 2', value: 'h2'},
                     {name: 'Título 3', value: 'h3'},
-                    {name: 'Título 4', value: 'h4'},
-                    {name: 'Título 5', value: 'h5'}
+                    {name: 'Título 4', value: 'h4'}
                 ];
 
                 scope.format = scope.formats[0];
