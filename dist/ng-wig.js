@@ -157,10 +157,10 @@ angular.module('ngWig')
 angular.module('ngWig').provider('ngWigToolbar', function () {
 
   var buttonLibrary = {
-    list1: {title: 'Unordered List', command: 'insertunorderedlist', styleClass: 'list-ul'},
-    list2: {title: 'Ordered List', command: 'insertorderedlist', styleClass: 'list-ol'},
-    bold: {title: 'Bold', command: 'bold', styleClass: 'bold'},
-    italic: {title: 'Italic', command: 'italic', styleClass: 'italic'},
+    list1: {title: 'Lista', command: 'insertunorderedlist', styleClass: 'list-ul'},
+    list2: {title: 'Lista Ordenada', command: 'insertorderedlist', styleClass: 'list-ol'},
+    bold: {title: 'Negrito', command: 'bold', styleClass: 'bold'},
+    italic: {title: 'Italico', command: 'italic', styleClass: 'italic'},
     link: {title: 'Link', command: 'createlink', styleClass: 'link'}
   };
 
@@ -232,10 +232,10 @@ angular.module('ngWig')
             template: '<select class="nw-select" ng-model="format" ng-change="execCommand(\'formatblock\', format.value)" ng-options="format.name for format in formats" ng-disabled="editMode || isDisabled"></select>',
             link: function (scope) {
                 scope.formats = [
-                    {name: 'Normal text', value: 'p'},
-                    {name: 'Header 1', value: 'h1'},
-                    {name: 'Header 2', value: 'h2'},
-                    {name: 'Header 3', value: 'h3'}
+                    {name: 'Texto Normal', value: 'p'},
+                    {name: 'Título 1', value: 'h1'},
+                    {name: 'Título 2', value: 'h2'},
+                    {name: 'Título 3', value: 'h3'}
                 ];
 
                 scope.format = scope.formats[0];
