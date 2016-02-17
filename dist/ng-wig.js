@@ -232,7 +232,7 @@ angular.module('ngWig')
             template: '<select class="nw-select" ng-model="format" ng-change="execCommand(\'formatblock\', format.value)" ng-options="format.name for format in formats" ng-disabled="editMode || isDisabled"></select>',
             link: function (scope) {
                 scope.formats = [
-                    {name: 'Normal', value: 'p'},
+                    {name: 'Parágrafo', value: 'p'},
                     {name: 'Título 1', value: 'h1'},
                     {name: 'Título 2', value: 'h2'},
                     {name: 'Título 3', value: 'h3'},
